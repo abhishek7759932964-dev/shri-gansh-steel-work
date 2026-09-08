@@ -5,621 +5,235 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Shri Ganesh Steel Work | Steel Gate, Grill, Railing & Fabrication</title>
-
 <meta name="description" content="Shri Ganesh Steel Work, Kahuhara — Steel Gate, Grill, Railing, Steel Window और सभी प्रकार के Steel Fabrication का काम। मजबूत और Premium Finish के लिए संपर्क करें।">
-
 <meta name="google-site-verification" content="amSJwmo0gGKuuHxhkrgGg6ubt1CQWVhDM_6t6G3XNIc" />
 
 <style>
 :root{
-  --black:#070707;
-  --dark:#101010;
-  --gold:#d4af37;
-  --lightgold:#f5d76e;
-  --white:#fff;
-  --gray:#bdbdbd;
-  --card:#151515;
+  --bg:#050505;--panel:#0d0d0d;--panel2:#151515;
+  --gold:#d4af37;--gold2:#f5d76e;--text:#fff;--muted:#b9b9b9;
+  --line:rgba(212,175,55,.28);
 }
-
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:var(--black);
-  color:var(--white);
-  line-height:1.6;
-}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
 a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-
-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:rgba(7,7,7,.96);
-  border-bottom:1px solid rgba(212,175,55,.35);
-  backdrop-filter:blur(10px);
-}
-.nav{
-  min-height:78px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:20px;
-}
-.brand{
-  display:flex;
-  align-items:center;
-  gap:12px;
-}
-.logo-icon{
-  width:60px;
-  height:60px;
-  border:2px solid var(--gold);
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  overflow:hidden;
-}
-.logo-icon img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
-  display:block;
-}
-.brand-text h2{
-  font-size:19px;
-  color:var(--lightgold);
-  letter-spacing:.5px;
-}
-.brand-text span{
-  font-size:11px;
-  color:#aaa;
-}
-nav{
-  display:flex;
-  flex-wrap:wrap;
-  gap:18px;
-}
-nav a{
-  color:#ddd;
-  font-size:14px;
-  transition:.25s;
-}
-nav a:hover{color:var(--gold)}
-
+.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:1000;background:rgba(5,5,5,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:58px;height:58px;object-fit:contain}
+.brand h2{font-size:17px;color:var(--gold2);letter-spacing:.5px}
+.brand small{display:block;color:#aaa;font-size:10px}
+nav{display:flex;gap:20px;align-items:center}
+nav a{font-size:14px;color:#ddd}
+nav a:hover{color:var(--gold2)}
+.nav-actions{display:flex;gap:8px}
+.mini{padding:9px 13px;border:1px solid var(--gold);border-radius:20px;font-size:12px}
 .hero{
-  min-height:650px;
-  display:flex;
-  align-items:center;
-  text-align:center;
-  background:
-    radial-gradient(circle at center,rgba(212,175,55,.14),transparent 42%),
-    linear-gradient(rgba(0,0,0,.72),rgba(0,0,0,.9));
+  min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden;
+  background-image:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.82) 35%,rgba(0,0,0,.22) 100%),url("steel-gate-bg.jpg");
+  background-size:cover;background-position:center;
 }
-.hero-content{width:100%}
-.badge{
-  display:inline-block;
-  border:1px solid var(--gold);
-  color:var(--lightgold);
-  padding:7px 16px;
-  border-radius:30px;
-  font-size:13px;
-  margin-bottom:20px;
-}
-.hero h1{
-  font-size:clamp(38px,7vw,72px);
-  line-height:1.08;
-  margin-bottom:18px;
-}
-.gold{color:var(--gold)}
-.hero p{
-  max-width:720px;
-  margin:0 auto 28px;
-  color:#ddd;
-  font-size:18px;
-}
-.buttons{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:12px;
-}
-.btn{
-  display:inline-block;
-  padding:13px 22px;
-  border-radius:8px;
-  font-weight:700;
-  border:1px solid var(--gold);
-  transition:.25s;
-}
-.btn-gold{
-  background:var(--gold);
-  color:#000;
-}
-.btn-gold:hover{background:var(--lightgold)}
-.btn-dark{
-  background:#111;
-  color:#fff;
-}
-.btn-dark:hover{background:#222}
-
-section{padding:80px 0}
-.section-title{
-  text-align:center;
-  margin-bottom:45px;
-}
-.section-title h2{
-  font-size:36px;
-  margin-bottom:8px;
-}
-.section-title p{color:#aaa}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:28px;
-}
-.panel{
-  background:linear-gradient(145deg,#181818,#0d0d0d);
-  border:1px solid rgba(212,175,55,.25);
-  border-radius:18px;
-  padding:30px;
-  box-shadow:0 10px 30px rgba(0,0,0,.25);
-}
-.panel h3{color:var(--lightgold);margin-bottom:14px}
-.panel p{color:#ccc}
-
-.services-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-.service{
-  background:var(--card);
-  border:1px solid #292929;
-  border-radius:16px;
-  padding:28px 22px;
-  text-align:center;
-  transition:.25s;
-}
-.service:hover{
-  transform:translateY(-5px);
-  border-color:var(--gold);
-}
-.service .icon{
-  font-size:36px;
-  margin-bottom:12px;
-}
-.service h3{color:var(--lightgold);margin-bottom:8px}
-.service p{color:#aaa;font-size:14px}
-
-.features{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}
-.feature{
-  text-align:center;
-  padding:24px 14px;
-  border:1px solid #292929;
-  border-radius:14px;
-  background:#111;
-}
-.feature strong{
-  display:block;
-  color:var(--lightgold);
-  margin-bottom:5px;
-}
-
-.enquiry{
-  background:linear-gradient(180deg,#101010,#070707);
-}
-.form-box{
-  max-width:760px;
-  margin:auto;
-  background:#121212;
-  border:1px solid rgba(212,175,55,.35);
-  border-radius:18px;
-  padding:30px;
-}
-.form-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-}
-.field{margin-bottom:16px}
-.field label{
-  display:block;
-  color:#ddd;
-  margin-bottom:7px;
-  font-size:14px;
-}
-.field input,
-.field select,
-.field textarea{
-  width:100%;
-  padding:13px 14px;
-  border-radius:8px;
-  border:1px solid #333;
-  background:#090909;
-  color:#fff;
-  outline:none;
-}
-.field input:focus,
-.field select:focus,
-.field textarea:focus{border-color:var(--gold)}
+.hero:after{content:"";position:absolute;inset:auto 0 0;height:90px;background:linear-gradient(transparent,var(--bg))}
+.hero-content{position:relative;z-index:2;max-width:680px;padding:70px 0}
+.eyebrow{display:inline-block;color:var(--gold2);border:1px solid var(--gold);border-radius:30px;padding:7px 14px;font-size:12px;letter-spacing:.8px;margin-bottom:18px}
+h1{font-size:clamp(40px,7vw,70px);line-height:1.06;margin-bottom:18px}
+.gold{color:var(--gold2)}
+.hero p{font-size:18px;color:#ddd;max-width:620px;margin-bottom:25px}
+.buttons{display:flex;flex-wrap:wrap;gap:11px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:8px;font-weight:700;border:1px solid var(--gold);transition:.2s}
+.btn-gold{background:var(--gold);color:#000}
+.btn-dark{background:#0b0b0b;color:#fff}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
+section{padding:78px 0}
+.section-title{text-align:center;margin-bottom:38px}
+.section-title .tag{color:var(--gold2);font-size:12px;letter-spacing:2px}
+.section-title h2{font-size:36px;margin-top:5px}
+.section-title p{color:#999;margin-top:5px}
+.services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:linear-gradient(145deg,#171717,#0b0b0b);border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-5px);border-color:var(--gold)}
+.card-top{height:150px;background:linear-gradient(135deg,#222,#090909);display:flex;align-items:center;justify-content:center;font-size:54px}
+.card-body{padding:20px;text-align:center}
+.card h3{color:var(--gold2);margin-bottom:6px}
+.card p{color:#aaa;font-size:13px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.why .item{background:#101010;border:1px solid #292929;border-radius:14px;padding:22px;text-align:center}
+.item b{display:block;color:var(--gold2);margin-bottom:4px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:stretch}
+.about-img{min-height:330px;border-radius:18px;background:url("steel-gate-bg.jpg") center/cover;position:relative;border:1px solid var(--line)}
+.about-img:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.2),rgba(0,0,0,.7))}
+.panel{background:linear-gradient(145deg,#171717,#0b0b0b);border:1px solid var(--line);border-radius:18px;padding:30px}
+.panel h3{color:var(--gold2);margin-bottom:12px;font-size:26px}
+.panel p{color:#ccc;margin-bottom:18px}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;color:#ddd;font-size:14px}
+.checks span::first-letter{color:var(--gold2)}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}
+.g{min-height:180px;border:1px solid var(--line);border-radius:14px;background-image:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.55)),url("steel-gate-bg.jpg");background-size:cover;background-position:center}
+.g:nth-child(1){grid-row:span 2;min-height:372px}
+.g:nth-child(2){background-position:65% center}
+.g:nth-child(3){background-position:35% center}
+.enquiry-wrap{max-width:820px;margin:auto;background:#101010;border:1px solid var(--line);border-radius:18px;padding:30px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+.field{margin-bottom:14px}
+.field.full{grid-column:1/-1}
+label{display:block;font-size:13px;color:#ddd;margin-bottom:6px}
+input,select,textarea{width:100%;padding:13px;border-radius:8px;border:1px solid #333;background:#080808;color:#fff;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}
 textarea{min-height:130px;resize:vertical}
-.full{grid-column:1/-1}
-.form-note{
-  text-align:center;
-  color:#888;
-  font-size:13px;
-  margin-top:13px;
+.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.contact .panel{text-align:center}
+.contact .panel p{margin:0;color:#bbb}
+.map{margin-top:22px;border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.map iframe{width:100%;height:360px;border:0;display:block}
+.social{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:18px}
+footer{border-top:1px solid var(--line);padding:28px 0;text-align:center;color:#888;font-size:13px}
+.float-wa{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:25px;z-index:999;box-shadow:0 6px 22px #000}
+@media(max-width:900px){
+ nav{display:none}.services,.why{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr}.contact{grid-template-columns:1fr}.hero{min-height:600px}.hero-content{padding:80px 0}
 }
-
-.contact-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
-}
-.contact-card{
-  background:#121212;
-  border:1px solid #292929;
-  border-radius:15px;
-  padding:25px;
-  text-align:center;
-}
-.contact-card h3{
-  color:var(--lightgold);
-  margin-bottom:7px;
-}
-.contact-card p{color:#bbb}
-
-.social{
-  display:flex;
-  justify-content:center;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:25px;
-}
-
-footer{
-  border-top:1px solid rgba(212,175,55,.25);
-  padding:28px 0;
-  text-align:center;
-  color:#999;
-  font-size:13px;
-}
-
-.float-wa{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  z-index:999;
-  background:#25d366;
-  color:#fff;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:26px;
-  box-shadow:0 5px 20px rgba(0,0,0,.4);
-}
-
-@media(max-width:800px){
-  nav{display:none}
-  .about-grid,
-  .services-grid,
-  .contact-grid{grid-template-columns:1fr}
-  .features{grid-template-columns:1fr 1fr}
-  .form-grid{grid-template-columns:1fr}
-  .full{grid-column:auto}
-  section{padding:60px 0}
-}
-@media(max-width:500px){
-  .brand-text h2{font-size:15px}
-  .logo-icon{width:52px;height:52px}
-  .hero{min-height:590px}
-  .hero p{font-size:16px}
-  .features{grid-template-columns:1fr}
-  .panel,.form-box{padding:22px}
+@media(max-width:600px){
+ .brand h2{font-size:14px}.brand img{width:50px;height:50px}.nav-actions .mini:first-child{display:none}
+ .services,.why,.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}
+ .gallery{grid-template-columns:1fr}.g:nth-child(1){grid-row:auto;min-height:230px}
+ section{padding:58px 0}.panel{padding:22px}.hero p{font-size:16px}
 }
 </style>
 </head>
-
 <body>
 
 <header>
-  <div class="container nav">
-    <a href="#home" class="brand">
-      <div class="logo-icon">
-        <img src="logo.png" alt="Shri Ganesh Steel Work Logo">
-      </div>
-      <div class="brand-text">
-        <h2>SHRI GANESH STEEL WORK</h2>
-        <span>PRO BY RAJEEV PANDEY</span>
-      </div>
-    </a>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#enquiry">Enquiry</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<div class="container nav">
+  <a href="#home" class="brand">
+    <img src="logo.png" alt="Shri Ganesh Steel Work Ganesh Ji Logo">
+    <div><h2>SHRI GANESH STEEL WORK</h2><small>PRO BY RAJEEV PANDEY • KAHUHARA</small></div>
+  </a>
+  <nav>
+    <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="nav-actions">
+    <a class="mini" href="https://wa.me/917759932964" target="_blank">WhatsApp</a>
+    <a class="mini" href="tel:8285399633">Call</a>
   </div>
+</div>
 </header>
 
 <main>
-
 <section class="hero" id="home">
   <div class="container hero-content">
-    <span class="badge">PREMIUM STEEL FABRICATION • KAHUHARA</span>
-    <h1>Strong Work.<br><span class="gold">Premium Finish.</span></h1>
-    <p>
-      Steel Gate, Grill, Railing, Steel Window और सभी प्रकार के
-      Steel Fabrication का मजबूत और टिकाऊ काम।
-    </p>
-
+    <span class="eyebrow">PREMIUM STEEL FABRICATION • KAHUHARA</span>
+    <h1>Aapke Sapno ke Ghar ko<br><span class="gold">Steel ki Mazboot Pehchaan</span></h1>
+    <p>Steel Gate • Grill • Railing • Steel Window • All Types of Steel Fabrication — मजबूत, टिकाऊ और Premium Finish.</p>
     <div class="buttons">
-      <a class="btn btn-gold" href="tel:8285399633">📞 Call Now</a>
+      <a class="btn btn-gold" href="#enquiry">Get Free Quote →</a>
       <a class="btn btn-dark" href="https://wa.me/917759932964" target="_blank">💬 WhatsApp</a>
       <a class="btn btn-dark" href="https://www.instagram.com/abhishek__7759?stkn=eTdkZnIxYWlsOTF2" target="_blank">📷 Instagram</a>
     </div>
   </div>
 </section>
 
-<section id="about">
-  <div class="container">
-    <div class="section-title">
-      <h2>About <span class="gold">Us</span></h2>
-      <p>मजबूती, भरोसा और बेहतर Finish</p>
-    </div>
-
-    <div class="about-grid">
-      <div class="panel">
-        <h3>SHRI GANESH STEEL WORK</h3>
-        <p>
-          Kahuhara में Steel Gate, Steel Grill, Railing, Steel Window
-          और सभी प्रकार के Steel Fabrication का काम किया जाता है।
-          हमारा लक्ष्य मजबूत, टिकाऊ और Premium Finish वाला काम देना है।
-        </p>
-      </div>
-
-      <div class="panel">
-        <h3>हमारी पहचान</h3>
-        <p>
-          घर, दुकान और अन्य जरूरतों के लिए मजबूत और सुंदर Steel Design
-          तैयार किए जाते हैं। बेहतर काम और भरोसेमंद सेवा के लिए हमसे
-          सीधे संपर्क करें।
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section id="services">
-  <div class="container">
-    <div class="section-title">
-      <h2>Our <span class="gold">Services</span></h2>
-      <p>All Types of Steel Work</p>
-    </div>
-
-    <div class="services-grid">
-      <div class="service">
-        <div class="icon">🚪</div>
-        <h3>Steel Gate</h3>
-        <p>मजबूत और आकर्षक Steel Gate Design.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">▦</div>
-        <h3>Steel Grill</h3>
-        <p>घर और दुकान के लिए मजबूत Grill Work.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">🏠</div>
-        <h3>Railing</h3>
-        <p>सीढ़ी और बालकनी के लिए Premium Railing.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">🪟</div>
-        <h3>Steel Window</h3>
-        <p>Strong और Durable Steel Window Work.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">⚒️</div>
-        <h3>Fabrication</h3>
-        <p>All Types of Steel Fabrication Work.</p>
-      </div>
-
-      <div class="service">
-        <div class="icon">✨</div>
-        <h3>Custom Design</h3>
-        <p>आपकी जरूरत के अनुसार Custom Steel Design.</p>
-      </div>
-    </div>
-  </div>
+<div class="container">
+ <div class="section-title"><div class="tag">OUR SERVICES</div><h2>हमारी <span class="gold">प्रमुख सेवाएँ</span></h2><p>All Types of Steel Work</p></div>
+ <div class="services">
+  <div class="card"><div class="card-top">🚪</div><div class="card-body"><h3>Steel Gate</h3><p>Main Gate, Sliding Gate, Compound Gate & Custom Design.</p></div></div>
+  <div class="card"><div class="card-top">▦</div><div class="card-body"><h3>Steel Grill</h3><p>Window Grill, Balcony Grill & Safety Grill.</p></div></div>
+  <div class="card"><div class="card-top">🏠</div><div class="card-body"><h3>Railing</h3><p>Stair Railing, Balcony Railing & Terrace Railing.</p></div></div>
+  <div class="card"><div class="card-top">⚒️</div><div class="card-body"><h3>Fabrication</h3><p>Steel Window, MS Structure & Custom Fabrication.</p></div></div>
+ </div>
+</div>
 </section>
 
 <section>
-  <div class="container">
-    <div class="section-title">
-      <h2>Why <span class="gold">Choose Us</span></h2>
-    </div>
-
-    <div class="features">
-      <div class="feature">
-        <strong>Strong Work</strong>
-        टिकाऊ निर्माण
-      </div>
-      <div class="feature">
-        <strong>Premium Finish</strong>
-        बेहतर Finishing
-      </div>
-      <div class="feature">
-        <strong>Custom Design</strong>
-        जरूरत के अनुसार
-      </div>
-      <div class="feature">
-        <strong>Direct Contact</strong>
-        आसान संपर्क
-      </div>
-    </div>
-  </div>
+<div class="container">
+ <div class="section-title"><div class="tag">WHY CHOOSE US?</div><h2>हम पर <span class="gold">भरोसा क्यों करें?</span></h2></div>
+ <div class="why">
+  <div class="item"><b>Premium Quality</b>बेहतरीन क्वालिटी</div>
+  <div class="item"><b>Strong & Durable</b>मजबूत और टिकाऊ</div>
+  <div class="item"><b>Custom Design</b>आपकी जरूरत के अनुसार</div>
+  <div class="item"><b>Affordable Price</b>उचित दाम</div>
+ </div>
+</div>
 </section>
 
-<section class="enquiry" id="enquiry">
-  <div class="container">
-    <div class="section-title">
-      <h2>Send <span class="gold">Enquiry</span></h2>
-      <p>अपनी जरूरत बताएं — WhatsApp पर सीधे भेजें</p>
-    </div>
-
-    <div class="form-box">
-      <form id="enquiryForm">
-        <div class="form-grid">
-
-          <div class="field">
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="आपका नाम" required>
-          </div>
-
-          <div class="field">
-            <label for="phone">Mobile Number</label>
-            <input id="phone" type="tel" inputmode="numeric" placeholder="मोबाइल नंबर" required>
-          </div>
-
-          <div class="field">
-            <label for="service">Service Type</label>
-            <select id="service" required>
-              <option value="">Select Service</option>
-              <option>Steel Gate</option>
-              <option>Steel Grill</option>
-              <option>Railing</option>
-              <option>Steel Window</option>
-              <option>Steel Fabrication</option>
-              <option>Custom Design</option>
-              <option>Other</option>
-            </select>
-          </div>
-
-          <div class="field">
-            <label for="contact">Preferred Contact</label>
-            <select id="contact">
-              <option>WhatsApp</option>
-              <option>Call</option>
-            </select>
-          </div>
-
-          <div class="field full">
-            <label for="message">Requirement</label>
-            <textarea id="message" placeholder="आपको किस प्रकार का Steel Work चाहिए?" required></textarea>
-          </div>
-
-        </div>
-
-        <button class="btn btn-gold" type="submit" style="width:100%;cursor:pointer">
-          💬 Send Enquiry on WhatsApp
-        </button>
-
-        <p class="form-note">
-          Submit करने पर WhatsApp खुलेगा और आपकी enquiry तैयार message के रूप में दिखाई देगी।
-        </p>
-      </form>
-    </div>
+<section id="about">
+<div class="container">
+ <div class="section-title"><div class="tag">ABOUT US</div><h2>श्री गणेश <span class="gold">स्टील वर्क</span></h2></div>
+ <div class="about">
+  <div class="about-img"></div>
+  <div class="panel">
+   <h3>मजबूती और भरोसे की पहचान</h3>
+   <p>हम आपके घर और दुकान के लिए उच्च गुणवत्ता वाले Steel Gate, Grill, Railing, Steel Window और सभी प्रकार के Steel Fabrication का काम करते हैं। हमारा फोकस मजबूत निर्माण, साफ finishing और ग्राहक की जरूरत के अनुसार design पर है।</p>
+   <div class="checks"><span>✓ Quality Material</span><span>✓ Professional Workmanship</span><span>✓ Customised Design</span><span>✓ Customer Satisfaction</span></div>
   </div>
+ </div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="container">
+ <div class="section-title"><div class="tag">OUR GALLERY</div><h2>हमारे <span class="gold">बेहतरीन काम</span></h2></div>
+ <div class="gallery"><div class="g"></div><div class="g"></div><div class="g"></div></div>
+ <p style="text-align:center;color:#888;margin-top:14px">अपनी वास्तविक project photos बाद में इसी Gallery में आसानी से जोड़ सकते हैं।</p>
+</div>
+</section>
+
+<section id="enquiry">
+<div class="container">
+ <div class="section-title"><div class="tag">GET IN TOUCH</div><h2>अपनी <span class="gold">Enquiry भेजें</span></h2><p>WhatsApp पर सीधे तैयार message भेजें</p></div>
+ <div class="enquiry-wrap">
+  <form id="enquiryForm">
+   <div class="form-grid">
+    <div class="field"><label>Name</label><input id="name" required placeholder="आपका नाम"></div>
+    <div class="field"><label>Mobile Number</label><input id="phone" type="tel" inputmode="numeric" required placeholder="मोबाइल नंबर"></div>
+    <div class="field"><label>Service</label><select id="service" required><option value="">Select Service</option><option>Steel Gate</option><option>Steel Grill</option><option>Railing</option><option>Steel Window</option><option>Steel Fabrication</option><option>Custom Design</option><option>Other</option></select></div>
+    <div class="field"><label>Preferred Contact</label><select id="contact"><option>WhatsApp</option><option>Call</option></select></div>
+    <div class="field full"><label>Requirement</label><textarea id="message" required placeholder="आपको किस प्रकार का Steel Work चाहिए?"></textarea></div>
+   </div>
+   <button class="btn btn-gold" type="submit" style="width:100%;cursor:pointer">💬 Send Enquiry on WhatsApp</button>
+  </form>
+ </div>
+</div>
 </section>
 
 <section id="contact">
-  <div class="container">
-    <div class="section-title">
-      <h2>Contact <span class="gold">Us</span></h2>
-      <p>सीधे हमसे संपर्क करें</p>
-    </div>
-
-    <div class="contact-grid">
-      <div class="contact-card">
-        <h3>📞 Call</h3>
-        <p>8285399633</p>
-        <div class="social">
-          <a class="btn btn-gold" href="tel:8285399633">Call Now</a>
-        </div>
-      </div>
-
-      <div class="contact-card">
-        <h3>💬 WhatsApp</h3>
-        <p>7759932964</p>
-        <div class="social">
-          <a class="btn btn-gold" href="https://wa.me/917759932964" target="_blank">Chat Now</a>
-        </div>
-      </div>
-
-      <div class="contact-card">
-        <h3>📷 Instagram</h3>
-        <p>@abhishek__7759</p>
-        <div class="social">
-          <a class="btn btn-gold" href="https://www.instagram.com/abhishek__7759?stkn=eTdkZnIxYWlsOTF2" target="_blank">Open Instagram</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel" style="margin-top:20px;text-align:center">
-      <h3>📍 Address</h3>
-      <p>Main Road Kahuhara, Near High School Kahuhara</p>
-    </div>
-  </div>
+<div class="container">
+ <div class="section-title"><div class="tag">CONTACT US</div><h2>आज ही <span class="gold">संपर्क करें</span></h2></div>
+ <div class="contact">
+  <div class="panel"><h3>📞 Call</h3><p>8285399633</p><div class="social"><a class="btn btn-gold" href="tel:8285399633">Call Now</a></div></div>
+  <div class="panel"><h3>💬 WhatsApp</h3><p>7759932964</p><div class="social"><a class="btn btn-gold" href="https://wa.me/917759932964" target="_blank">Chat Now</a></div></div>
+  <div class="panel"><h3>📷 Instagram</h3><p>@abhishek__7759</p><div class="social"><a class="btn btn-gold" href="https://www.instagram.com/abhishek__7759?stkn=eTdkZnIxYWlsOTF2" target="_blank">Open Instagram</a></div></div>
+ </div>
+ <div class="map">
+  <iframe loading="lazy" src="https://www.google.com/maps?q=Main%20Road%20Kahuhara%2C%20Near%20High%20School%20Kahuhara&output=embed" title="Shri Ganesh Steel Work Google Map"></iframe>
+ </div>
+ <div class="panel" style="margin-top:16px;text-align:center"><h3>📍 Address</h3><p>Main Road Kahuhara, Near High School Kahuhara</p></div>
+</div>
 </section>
-
 </main>
 
-<footer>
-  <div class="container">
-    © 2026 <span class="gold">SHRI GANESH STEEL WORK</span> • PRO BY RAJEEV PANDEY
-  </div>
-</footer>
-
+<footer>© 2026 <span class="gold">SHRI GANESH STEEL WORK</span> • PRO BY RAJEEV PANDEY</footer>
 <a class="float-wa" href="https://wa.me/917759932964" target="_blank" aria-label="WhatsApp">💬</a>
 
 <script>
-document.getElementById("enquiryForm").addEventListener("submit", function(e){
-  e.preventDefault();
+document.getElementById("enquiryForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const text=`🔔 NEW ENQUIRY - SHRI GANESH STEEL WORK
 
-  const name = document.getElementById("name").value.trim();
-  const phone = document.getElementById("phone").value.trim();
-  const service = document.getElementById("service").value;
-  const contact = document.getElementById("contact").value;
-  const message = document.getElementById("message").value.trim();
+👤 Name: ${document.getElementById("name").value.trim()}
 
-  const text =
-`🔔 NEW ENQUIRY - SHRI GANESH STEEL WORK
+📞 Phone: ${document.getElementById("phone").value.trim()}
 
-👤 Name: ${name}
+🔧 Service: ${document.getElementById("service").value}
 
-📞 Phone: ${phone}
+📲 Preferred Contact: ${document.getElementById("contact").value}
 
-🔧 Service: ${service}
-
-📲 Preferred Contact: ${contact}
-
-📝 Requirement: ${message}
+📝 Requirement: ${document.getElementById("message").value.trim()}
 
 📍 Address: Main Road Kahuhara, Near High School Kahuhara`;
-
-  window.open(
-    "https://wa.me/917759932964?text=" + encodeURIComponent(text),
-    "_blank"
-  );
+ window.open("https://wa.me/917759932964?text="+encodeURIComponent(text),"_blank");
 });
 </script>
-
 </body>
 </html>
